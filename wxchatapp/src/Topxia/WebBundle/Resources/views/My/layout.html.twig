@@ -1,0 +1,98 @@
+{% extends 'TopxiaWebBundle::layout.html.twig' %}
+
+{% block title %}我的浏览 - {{ parent() }}{% endblock %}
+
+{% block content %}
+
+{{ render(controller('TopxiaWebBundle:My:avatarAlert')) }}
+
+<div class="row row-3-9">
+  <div class="col-md-3">
+
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="list-group-block">
+
+          {% if app.user.isTeacher() %}
+            <div class="list-group-panel">
+              <div class="list-group-heading">我的浏览记录</div>
+              <ul class="list-group">
+               <a class="list-group-item
+               {% if side_nav == 'my-teaching-courses' %} active {% endif %}" 
+               href="{{path('my_teaching_courses')}}">我的产品</a>
+
+              {% if is_plugin_installed('Classroom') and setting('classroom.enabled')|default(0) %}
+               <a class="list-group-item
+               {% if side_nav == 'my-teaching-classroom' %} active {% endif %}" 
+               href="{{path('my_teaching_classrooms')}}">所在{{ setting('classroom.name')|default("商家") }}</a>
+              {% endif %}
+              
+               <a class="list-group-item 
+               {% if side_nav == 'my-teaching-questions' %} active {% endif %}" 
+                href="{{path('my_teaching_threads', {type:'question'}) }}">{% if setting('default.user_name') %}{{setting('default.user_name')|default('顾客')}}{% else %}顾客{% endif %}问答</a>
+               <a class="list-group-item {% if side_nav == 'my-teaching-discussions' %} active {% endif %}"
+                href="{{path('my_teaching_threads', {type:'discussion'}) }}">{% if setting('default.user_name') %}{{setting('default.user_name')|default('顾客')}}{% else %}顾客{% endif %}话题</a>
+               
+               <a class="list-group-item {% if side_nav == 'my-teaching-check' %} active {% endif %}"
+                href="{{path('course_manage_list_teacher_test_reviewing') }}">调查问卷批阅</a>
+               
+               {% if is_plugin_installed('Homework') %}
+                 <a class="list-group-item {% if side_nav == 'my-teaching-homework-check' %} active {% endif %}" href="{{path('my_teaching_homework_list') }}">调查问卷批改</a>
+               {% endif %}
+
+               {% if is_plugin_installed('MaterialLib') %}
+               <a class="list-group-item {% if side_nav == 'material-lib' %} active {% endif %}"
+                href="{{path('material_lib_browsing') }}">浏览记录资料库</a>
+               {% endif %}
+              </ul>
+            </div>
+          {% endif %}
+
+          <div class="list-group-panel">
+            <div class="list-group-heading">我的浏览</div>
+            <ul class="list-group">
+               <a class="list-group-item
+               {% if side_nav == 'my-learning' %} active {% endif %}" 
+               href="{{path('my_courses_learning')}}">我的产品</a>
+
+               {% if is_plugin_installed('Classroom') and setting('classroom.enabled')|default(0) %}
+               <a class="list-group-item
+               {% if side_nav == 'my-classroom' %} active {% endif %}" 
+               href="{{path('my_classrooms')}}">我的{{ setting('classroom.name')|default("商家") }}</a>
+               {% endif %}
+
+               {% if setting('course.live_course_enabled') %}
+               <a class="list-group-item
+               {% if side_nav == 'my-learning-live' %} active {% endif %}" 
+               href="{{path('my_live_courses_learning')}}">我的直播课表</a>
+               {% endif %}
+               <a class="list-group-item
+               {% if side_nav == 'my-questions' %} active {% endif %}" 
+              href="{{path('my_questions')}}">我的问答</a>
+               <a class="list-group-item
+               {% if side_nav == 'my-discussions' %} active {% endif %}" 
+              href="{{path('my_discussions')}}">我的话题</a>
+               <a class="list-group-item
+               {% if side_nav == 'my-notes' %} active {% endif %}" 
+                href="{{path('my_notebooks')}}">我的笔记</a>
+               {% if is_plugin_installed('Homework') %}
+                 <a class="list-group-item {% if side_nav == 'my-homeworks' %} active {% endif %}" href="{{ path('my_homework_list') }}">我的问卷</a>
+               {% endif %}
+               <a class="list-group-item
+               {% if side_nav == 'my-quiz' %} active {% endif %}" 
+                href="{{path('my_quiz')}}">我的调查问卷</a>
+               <a class="list-group-item
+               {% if side_nav == 'my-group' %} active {% endif %}" 
+               href="{{path('group_member_center')}}">我的小组</a>
+            </ul>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-md-9">{% block main %}{% endblock %}</div>
+</div>
+
+{% endblock %}

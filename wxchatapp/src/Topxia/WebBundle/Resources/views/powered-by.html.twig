@@ -1,0 +1,8 @@
+{% if setting('copyright.owned') %}
+  {% if setting('copyright.name') %}
+    Powered by <a href="{{ path('homepage') }}" target="_blank">{{ setting('copyright.name') }}</a>
+  {% endif %}
+{% else %}
+  Powered by <a href="#" target="_blank">WxChatAPP v{{ constant('\\Topxia\\System::VERSION') }}</a>
+  ©2017-2019 <a href="#" target="_blank"> 微信产品发布平台</a>
+{% endif %}

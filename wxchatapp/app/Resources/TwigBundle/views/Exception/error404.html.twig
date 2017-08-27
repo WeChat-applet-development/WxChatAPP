@@ -1,0 +1,14 @@
+{% extends 'TwigBundle:Exception:layout.html.twig' %}
+{% block title %}页面找不到 - {{ parent() }}{% endblock %}
+
+{% block body %}
+	<div class="container">
+		<div class="content">
+			<h1>页面找不到</h1>
+			<div class="message">该页面已被删除，或地址错误。</div>
+			<div class="actions">
+				<a href="{{ path('homepage', {ref:404}) }}">返回首页</a>
+			</div>
+		</div>
+	</div>
+{% endblock %}
