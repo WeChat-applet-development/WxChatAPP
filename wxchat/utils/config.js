@@ -1,5 +1,5 @@
-var API_BASE = 'http://localhost:8018/mapi_v1/courses';
-var API_ABOUT= 'http://localhost:8018/mapi_v2/School/loginSchoolWithSite';
+var API_BASE = 'http://localhost:8008/mapi_v1/courses';
+var API_ABOUT= 'http://localhost:8008/mapi_v2/School/loginSchoolWithSite';
 
 const CONFIG = {
     API_URL: {
