@@ -8,7 +8,7 @@ Page({
   onLoad: function () {
     var that = this;
     wx.request({
-      url: CONFIG.API_URL.GET_CATEGORY,
+      url: CONFIG.API_URL.GET_NEWS_MORE,
       method: 'GET',
       data: {},
       header: {
@@ -17,19 +17,28 @@ Page({
       success: function(res) {
         console.log(res);
 
-        if (res.statusCode == 200 && res.data.status == 'ok') {
+        if (res.statusCode == 200 && res.data.status == 'ok' && res.data.total >= (res.data.limit+res.data.start)) {
           var data = res.data;
           var news = [];
           
           console.log(data);
-          for (var i = 0; i < data.total; i++) {
-            var excerpt_plain = data.posts[i].subtitle.replace(/<[^>].*?>/g, "");
-            data.posts[i].excerpt_plain = excerpt_plain.replace(/\[[^\]].*?\]/g, "");
+          for (var i = 0; i < data.count; i++) {
+            var excerpt_body = data.posts[i].body.replace(/<[^>].*?>/g, "");
+            data.posts[i].excerpt_plain = excerpt_body.replace(/\[[^\]].*?\]/g, "");
             news.push(data.posts[i]);
           }
           that.setData({news: news});
         } else {
+          var data = res.data;
+          var news = [];
           
+          console.log(data);
+          for (var i = 0; i < (data.total-data.start); i++) {
+            var excerpt_body = data.posts[i].body.replace(/<[^>].*?>/g, "");
+            data.posts[i].excerpt_body = excerpt_body.replace(/\[[^\]].*?\]/g, "");
+            news.push(data.posts[i]);
+          }
+          that.setData({news: news});
         }
       }
     })

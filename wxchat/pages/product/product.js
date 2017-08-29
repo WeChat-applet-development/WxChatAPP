@@ -6,7 +6,7 @@ Page({
   onLoad: function () {
     var that = this;
     wx.request({
-      url: CONFIG.API_URL.GET_INDEX,
+      url: CONFIG.API_URL.GET_PRODUCT,
       method: 'GET',
       data: {},
       header: {

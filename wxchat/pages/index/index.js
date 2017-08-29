@@ -29,13 +29,13 @@ Page({
           var news = [];
           
           console.log(data);
-          for (var i = 0; i < data.total; i++) {
-            if (i < 3) {
+          for (var i = 0; i < data.count; i++) {
+            if (i < 5) {
               swipers.push(data.posts[i]);
             }
             else {
-              var excerpt_plain = data.posts[i].subtitle.replace(/<[^>].*?>/g, "");
-              data.posts[i].excerpt_plain = excerpt_plain.replace(/\[[^\]].*?\]/g, "");
+              var excerpt_body = data.posts[i].body.replace(/<[^>].*?>/g, "");
+              data.posts[i].excerpt_body = excerpt_body.replace(/\[[^\]].*?\]/g, "");
               news.push(data.posts[i]);
             }
           }

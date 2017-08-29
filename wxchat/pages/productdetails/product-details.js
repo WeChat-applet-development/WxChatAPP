@@ -8,7 +8,7 @@ Page({
   onLoad: function (options) {
     var that = this;
     wx.request({
-      url: CONFIG.API_URL.GET_ARTICLE + options.id,
+      url: CONFIG.API_URL.GET_PRODUCT_DETAILS + options.id,
       method: 'GET',
       data: {},
       header: {

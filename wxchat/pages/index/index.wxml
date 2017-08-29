@@ -6,24 +6,24 @@
             <block wx:for="{{swipers}}">
                 <swiper-item>
                     <navigator url="/pages/newsdetails/news-details?id={{item.id}}" class="widget">
-                        <image mode="widthFix" src="{{item.largePicture}}" class="slide-image" width="" height=""></image>
+                        <image mode="widthFix" src="{{item.originalThumb}}" class="slide-image" width="" height=""></image>
                     </navigator>
                 </swiper-item>
             </block>
         </swiper>
     </view>
     <view class="news">
-        <text class="news-title">新闻动态</text>
+        <text class="news-title">资讯动态</text>
 
         <block wx:for="{{news}}">
         <navigator url="/pages/newsdetails/news-details?id={{item.id}}">
         <view class="news-item line">
             <view class="news-item-pic">
-                <image mode="widthFix" src="{{item.smallPicture}}" class="news-item-image" width="" height=""></image>
+                <image mode="widthFix" src="{{item.thumb}}" class="news-item-image" width="" height=""></image>
             </view>
             <view class="news-item-words">
                 <view class="news-item-title"><text>{{item.title}}</text></view>
-                <view class="news-item-content"><text>{{item.excerpt_plain}}</text></view>
+                <view class="news-item-content"><text>{{item.excerpt_body}}</text></view>
             </view>
         </view>
         </navigator>

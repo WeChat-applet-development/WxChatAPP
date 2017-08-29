@@ -8,7 +8,7 @@ Page({
   onLoad: function (options) {
     var that = this;
     wx.request({
-      url: CONFIG.API_URL.GET_ARTICLE + options.id,
+      url: CONFIG.API_URL.GET_NEWS_DETAILS + options.id,
       method: 'GET',
       data: {},
       header: {
@@ -21,9 +21,9 @@ Page({
           var data = res.data;
 
           that.setData({
-            news: data.course,
+            news: data.article,
           })
-          WxParse.wxParse('about', 'html', data.course.about, that, 25)
+          WxParse.wxParse('body', 'html', data.article.body, that, 25)
         } else {
           
         }

@@ -4,15 +4,12 @@
     	<text class="page__title">{{news.title}}</text>
     	<text class="page__desc"></text>
   	</view>
-  	<view class="news-details-content swiper">
-        <image mode="widthFix" src="{{news.largePicture}}" class="news-item-image" width="" height=""></image>
-    </view>
     <view class="news-details-content wxParse">
-    	<template is="wxParse" data="{{wxParseData:about.nodes}}"/>
+    	<template is="wxParse" data="{{wxParseData:body.nodes}}"/>
     </view>
     <view class="news-details-content swiper wxParse">
-        <view><text>价格:{{news.price}}</text></view>
-      	<view><text>特点：{{news.goals}}</text></view>
-        <view><text>适用人群：{{news.audiences}}</text></view>
+        <view><text>来源:{{news.source}}</text></view>
+      	<view><text>地址：{{news.sourceUrl}}</text></view>
+        <view><text>浏览：{{news.hits}}</text></view>
     </view>
 </view>
