@@ -3,7 +3,7 @@
         <text class="news-title">新闻动态</text>
 
         <block wx:for="{{news}}">
-        <navigator url="/pages/news/news-details?id={{item.id}}">
+        <navigator url="/pages/newsdetails/news-details?id={{item.id}}">
         <view class="news-item line">
             <view class="news-item-pic">
                 <image mode="widthFix" src="{{item.smallPicture}}" class="news-item-image" width="" height=""></image>

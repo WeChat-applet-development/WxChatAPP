@@ -1,0 +1,43 @@
+登录：http://localhost:8008/mapi_v1/login?_username=admin&_password=admin
+登出：http://localhost:8008/mapi_v1/logout?token=onx7e7sowe80kcgwwwwk04oc8kk08s4
+注册：http://localhost:8008/mapi_v1/user_register?email=huidaoli@qq.com&nickname=huidaoli&password=huidaoli
+
+发表评论：http://localhost:8008/mapi_v1/courses/{courseId}/reviews?token=a4m0mip3x94coskcwkgwgso88sw8ccw&ration=5&content=huidaoli
+产品评论列表：http://localhost:8008/mapi_v1/courses/1/reviews
+发表评论：http://localhost:8008/mapi_v1/courses/1/review_create?token=9rku5ay8kx8oc0wgg0s0sow404kk0sw&ration=5&content=huidaoli
+
+收藏：http://localhost:8008/mapi_v1/courses/{courseId}/favorite?token=cmwc7hghajw4g8k084k8w0scscs88ck
+取消收藏：http://localhost:8008/mapi_v1/courses/{courseId}/unfavorite?token=cmwc7hghajw4g8k084k8w0scscs88ck
+
+二维码：http://localhost:8008/mapi_v1/qrcode
+app相关信息：http://localhost:8008/mapi_v2/School/loginSchoolWithSite?v=1
+
+产品列表：http://localhost:8008/mapi_v1/courses
+一条产品：http://localhost:8008/mapi_v1/courses/1
+
+产品介绍内容列表：http://localhost:8008/mapi_v1/courses/1/items
+产品介绍内容列表一条数据：http://localhost:8008/mapi_v1/courses/1/lessons/1
+产品介绍内容列表一条数据中的视频：http://localhost:8008/mapi_v1/courses/1/lessons/1/media
+
+app移动简介：http://localhost:8008/mapi_v1/about
+
+资讯运营设置：http://localhost:8008/mapi_v2/articleApp
+资讯列表：http://localhost:8008/mapi_v2/articleApp/list
+翻页资讯列表：http://localhost:8008/mapi_v2/articleApp/list?start=0&limit=20
+资讯栏目列表：http://localhost:8008/mapi_v2/articleApp/category
+资讯详情：http://localhost:8008/mapi_v2/articleApp/detail/1
+
+图片地址：
+thumb： http://localhost:8008/files/default/2017/08-28/223519787d81822534.jpg?5.5.6
+	public://default/2017/08-28/223519787d81822534.jpg
+
+originalThumb：  http://localhost:8008/files/article/2017/08-28/2235219d8ee6649398.jpg
+	  	 public://article/2017/08-28/2235219d8ee6649398.jpg
+
+picture：	http://localhost:8008/files/default/2017/08-28/224540472f93138675.png?5.5.6
+		/files/default/2017/08-28/224540472f93138675.png?5.5.6
+
+
+
+
+

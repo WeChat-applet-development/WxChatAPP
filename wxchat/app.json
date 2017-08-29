@@ -1,9 +1,10 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/news/news",
-    "pages/news/news-details",
+    "pages/newsmore/news-more",
+    "pages/newsdetails/news-details",
     "pages/product/product",
+    "pages/productdetails/product-details",
     "pages/contact/contact"
   ],
   "window": {

@@ -48,7 +48,7 @@ Page({
   },
   go: function(event) {
     wx.navigateTo({
-      url: '/pages/news/news-details?id=' + event.currentTarget.dataset.type
+      url: '/pages/newsdetails/news-details?id=' + event.currentTarget.dataset.type
     })
   }
 })

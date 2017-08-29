@@ -5,7 +5,7 @@
   autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
             <block wx:for="{{swipers}}">
                 <swiper-item>
-                    <navigator url="/pages/news/news-details?id={{item.id}}" class="widget">
+                    <navigator url="/pages/newsdetails/news-details?id={{item.id}}" class="widget">
                         <image mode="widthFix" src="{{item.largePicture}}" class="slide-image" width="" height=""></image>
                     </navigator>
                 </swiper-item>
@@ -16,7 +16,7 @@
         <text class="news-title">新闻动态</text>
 
         <block wx:for="{{news}}">
-        <navigator url="/pages/news/news-details?id={{item.id}}">
+        <navigator url="/pages/newsdetails/news-details?id={{item.id}}">
         <view class="news-item line">
             <view class="news-item-pic">
                 <image mode="widthFix" src="{{item.smallPicture}}" class="news-item-image" width="" height=""></image>
@@ -30,7 +30,7 @@
         </block>
 
         <view class="widgets__list widgets__list_show">
-            <navigator url="/pages/news/news?cat={{cat}}" class="widget_more">
+            <navigator url="/pages/newsmore/news-more?cat={{cat}}" class="widget_more">
                 <text class="news-more">查看更多</text>
                 <image class="widget__arrow" src="/images/arrowright.png" mode="aspectFill" />
                 <view class="widget__line widget__line_first"></view>
