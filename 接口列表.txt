@@ -24,6 +24,7 @@ app移动简介：http://localhost:8008/mapi_v1/about
 资讯运营设置：http://localhost:8008/mapi_v2/articleApp
 资讯列表：http://localhost:8008/mapi_v2/articleApp/list
 翻页资讯列表：http://localhost:8008/mapi_v2/articleApp/list?start=0&limit=20
+翻页固定类别的资讯：http://localhost:8008/mapi_v2/articleApp/list?start=0&limit=20&categoryId=1
 资讯栏目列表：http://localhost:8008/mapi_v2/articleApp/category
 资讯详情：http://localhost:8008/mapi_v2/articleApp/detail/1
 

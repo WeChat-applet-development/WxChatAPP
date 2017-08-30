@@ -23,7 +23,14 @@ class ArticleAppController extends MobileBaseController
     public function categoryAction(Request $request)
     {
         $categoryTree = $this->getArticleCategoryService()->getCategoryTree();
-        return $this->createJson($request, $categoryTree);
+		
+		$result = array();
+		$result['status'] = $request->query->get('status', "ok");
+		$result['posts'] = $categoryTree;
+
+        return $this->createJson($request, $result);
+		
+        //return $this->createJson($request, $categoryTree);
     }
 
     public function listAction(Request $request)

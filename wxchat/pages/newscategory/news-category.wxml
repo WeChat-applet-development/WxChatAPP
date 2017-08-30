@@ -1,0 +1,20 @@
+
+<view class="news">
+        <text class="news-title">栏目分类：</text>
+        <block wx:for="{{category}}">
+
+        <navigator url="/pages/newsmore/news-more?id={{item.id}}">
+        <view class="news-item line">
+            <view class="news-item-pic">
+                <image mode="widthFix" src="/images/logo.png" class="news-item-image" width="" height=""></image>
+            </view>
+            <view class="news-item-words">
+                <view class="news-item-title">栏目名称：<text>{{item.name}}</text></view>
+                <view class="news-item-content">seo标题：<text>{{item.seoTitle}}</text></view>
+                <view class="news-item-content">seo关键词：<text>{{item.seoKeyword}}</text></view>
+                <view class="news-item-content">seo优化：<text>{{item.seoDesc}}</text></view>
+            </view>
+        </view>
+        </navigator>
+        </block>
+    </view>

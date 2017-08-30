@@ -1,7 +1,6 @@
 
 <view class="news">
         <text class="news-title">资讯动态</text>
-
         <block wx:for="{{news}}">
         <navigator url="/pages/newsdetails/news-details?id={{item.id}}">
         <view class="news-item line">

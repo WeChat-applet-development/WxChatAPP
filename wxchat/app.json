@@ -5,6 +5,7 @@
     "pages/newsdetails/news-details",
     "pages/product/product",
     "pages/productdetails/product-details",
+    "pages/newscategory/news-category",
     "pages/contact/contact"
   ],
   "window": {

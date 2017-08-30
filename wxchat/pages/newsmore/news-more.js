@@ -5,10 +5,10 @@ Page({
     
     
   },
-  onLoad: function () {
+  onLoad: function (options) {
     var that = this;
     wx.request({
-      url: CONFIG.API_URL.GET_NEWS_MORE,
+      url: CONFIG.API_URL.GET_NEWS_BY_CATEGORY + options.id,
       method: 'GET',
       data: {},
       header: {
