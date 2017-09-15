@@ -1,0 +1,14 @@
+<import src="../../utils/wxParse/wxParse.wxml"/> 
+<view class="page">
+  	<view class="page__hd">
+    	<text class="page__title">{{title}}</text>
+    	<text class="page__desc"></text>
+  	</view>
+    <view class="page__bd">
+        <view class="section section_gap">
+            <view class="body-view" style="text-align: center;">
+                <video src="{{mediaUri}}"></video>
+            </view>
+        </view>
+    </view>
+</view>

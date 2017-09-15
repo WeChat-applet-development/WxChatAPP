@@ -5,7 +5,7 @@ var API_NEWS_CATEGORY = 'http://localhost:8008/mapi_v2/articleApp/category';//�
 var API_NEWS_BY_CATEGORY = 'http://localhost:8008/mapi_v2/articleApp/list?start=0&limit=20&categoryId=';//按栏目类别获取资讯列表
 var API_PRODUCT_BASE = 'http://localhost:8008/mapi_v1/courses';//产品列表
 var API_PRODUCT_DETAILS = 'http://localhost:8008/mapi_v1/courses';//产品详情
-
+var API_PRODUCT_MEDIA = 'http://localhost:8008/mapi_v1/courses';//产品视频详情
 var API_ABOUT= 'http://localhost:8008/mapi_v2/School/loginSchoolWithSite';//平台简介信息
 
 const CONFIG = {
@@ -18,6 +18,7 @@ const CONFIG = {
         GET_PAGE: API_ABOUT,
         GET_NEWS_CATEGORY: API_NEWS_CATEGORY,
         GET_NEWS_BY_CATEGORY: API_NEWS_BY_CATEGORY,
+        GET_PRODUCT_MEDIA: API_PRODUCT_MEDIA + '/',
     }
 }
 

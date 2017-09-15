@@ -6,7 +6,8 @@
     "pages/product/product",
     "pages/productdetails/product-details",
     "pages/newscategory/news-category",
-    "pages/contact/contact"
+    "pages/contact/contact",
+    "pages/productmedia/product-media"
   ],
   "window": {
     "navigationBarTextStyle": "black",

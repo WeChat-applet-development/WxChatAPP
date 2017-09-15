@@ -15,9 +15,9 @@ app相关信息：http://localhost:8008/mapi_v2/School/loginSchoolWithSite?v=1
 产品列表：http://localhost:8008/mapi_v1/courses
 一条产品：http://localhost:8008/mapi_v1/courses/1
 
-产品介绍内容列表：http://localhost:8008/mapi_v1/courses/1/items
-产品介绍内容列表一条数据：http://localhost:8008/mapi_v1/courses/1/lessons/1
-产品介绍内容列表一条数据中的视频：http://localhost:8008/mapi_v1/courses/1/lessons/1/media
+产品介绍内容列表：http://localhost:8008/mapi_v1/courses/1/items?token=r21godrkveskkcg0skwg80gco4o8w0o
+产品介绍内容列表一条数据：http://localhost:8008/mapi_v1/courses/1/lessons/1?token=r21godrkveskkcg0skwg80gco4o8w0o
+产品介绍内容列表一条数据中的视频：http://localhost:8008/mapi_v1/courses/1/lessons/1/media?token=r21godrkveskkcg0skwg80gco4o8w0o
 
 app移动简介：http://localhost:8008/mapi_v1/about
 
