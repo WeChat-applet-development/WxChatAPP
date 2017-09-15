@@ -1,41 +1,41 @@
-µÇÂ¼£ºhttp://localhost:8008/mapi_v1/login?_username=admin&_password=admin
-µÇ³ö£ºhttp://localhost:8008/mapi_v1/logout?token=onx7e7sowe80kcgwwwwk04oc8kk08s4
-×¢²á£ºhttp://localhost:8008/mapi_v1/user_register?email=huidaoli@qq.com&nickname=huidaoli&password=huidaoli
+ç™»å½•ï¼šhttp://localhost:8008/mapi_v1/login?_username=admin&_password=admin
+ç™»å‡ºï¼šhttp://localhost:8008/mapi_v1/logout?token=onx7e7sowe80kcgwwwwk04oc8kk08s4
+æ³¨å†Œï¼šhttp://localhost:8008/mapi_v1/user_register?email=huidaoli@qq.com&nickname=huidaoli&password=huidaoli
 
-·¢±íÆÀÂÛ£ºhttp://localhost:8008/mapi_v1/courses/{courseId}/reviews?token=a4m0mip3x94coskcwkgwgso88sw8ccw&ration=5&content=huidaoli
-²úÆ·ÆÀÂÛÁĞ±í£ºhttp://localhost:8008/mapi_v1/courses/1/reviews
-·¢±íÆÀÂÛ£ºhttp://localhost:8008/mapi_v1/courses/1/review_create?token=9rku5ay8kx8oc0wgg0s0sow404kk0sw&ration=5&content=huidaoli
+å‘è¡¨è¯„è®ºï¼šhttp://localhost:8008/mapi_v1/courses/{courseId}/reviews?token=a4m0mip3x94coskcwkgwgso88sw8ccw&ration=5&content=huidaoli
+äº§å“è¯„è®ºåˆ—è¡¨ï¼šhttp://localhost:8008/mapi_v1/courses/1/reviews
+å‘è¡¨è¯„è®ºï¼šhttp://localhost:8008/mapi_v1/courses/1/review_create?token=9rku5ay8kx8oc0wgg0s0sow404kk0sw&ration=5&content=huidaoli
 
-ÊÕ²Ø£ºhttp://localhost:8008/mapi_v1/courses/{courseId}/favorite?token=cmwc7hghajw4g8k084k8w0scscs88ck
-È¡ÏûÊÕ²Ø£ºhttp://localhost:8008/mapi_v1/courses/{courseId}/unfavorite?token=cmwc7hghajw4g8k084k8w0scscs88ck
+æ”¶è—ï¼šhttp://localhost:8008/mapi_v1/courses/{courseId}/favorite?token=cmwc7hghajw4g8k084k8w0scscs88ck
+å–æ¶ˆæ”¶è—ï¼šhttp://localhost:8008/mapi_v1/courses/{courseId}/unfavorite?token=cmwc7hghajw4g8k084k8w0scscs88ck
 
-¶şÎ¬Âë£ºhttp://localhost:8008/mapi_v1/qrcode
-appÏà¹ØĞÅÏ¢£ºhttp://localhost:8008/mapi_v2/School/loginSchoolWithSite?v=1
+äºŒç»´ç ï¼šhttp://localhost:8008/mapi_v1/qrcode
+appç›¸å…³ä¿¡æ¯ï¼šhttp://localhost:8008/mapi_v2/School/loginSchoolWithSite?v=1
 
-²úÆ·ÁĞ±í£ºhttp://localhost:8008/mapi_v1/courses
-Ò»Ìõ²úÆ·£ºhttp://localhost:8008/mapi_v1/courses/1
+äº§å“åˆ—è¡¨ï¼šhttp://localhost:8008/mapi_v1/courses
+ä¸€æ¡äº§å“ï¼šhttp://localhost:8008/mapi_v1/courses/1
 
-²úÆ·½éÉÜÄÚÈİÁĞ±í£ºhttp://localhost:8008/mapi_v1/courses/1/items?token=r21godrkveskkcg0skwg80gco4o8w0o
-²úÆ·½éÉÜÄÚÈİÁĞ±íÒ»ÌõÊı¾İ£ºhttp://localhost:8008/mapi_v1/courses/1/lessons/1?token=r21godrkveskkcg0skwg80gco4o8w0o
-²úÆ·½éÉÜÄÚÈİÁĞ±íÒ»ÌõÊı¾İÖĞµÄÊÓÆµ£ºhttp://localhost:8008/mapi_v1/courses/1/lessons/1/media?token=r21godrkveskkcg0skwg80gco4o8w0o
+äº§å“ä»‹ç»å†…å®¹åˆ—è¡¨ï¼šhttp://localhost:8008/mapi_v1/courses/1/items?token=r21godrkveskkcg0skwg80gco4o8w0o
+äº§å“ä»‹ç»å†…å®¹åˆ—è¡¨ä¸€æ¡æ•°æ®ï¼šhttp://localhost:8008/mapi_v1/courses/1/lessons/1?token=r21godrkveskkcg0skwg80gco4o8w0o
+äº§å“ä»‹ç»å†…å®¹åˆ—è¡¨ä¸€æ¡æ•°æ®ä¸­çš„è§†é¢‘ï¼šhttp://localhost:8008/mapi_v1/courses/1/lessons/1/media?token=r21godrkveskkcg0skwg80gco4o8w0o
 
-appÒÆ¶¯¼ò½é£ºhttp://localhost:8008/mapi_v1/about
+appç§»åŠ¨ç®€ä»‹ï¼šhttp://localhost:8008/mapi_v1/about
 
-×ÊÑ¶ÔËÓªÉèÖÃ£ºhttp://localhost:8008/mapi_v2/articleApp
-×ÊÑ¶ÁĞ±í£ºhttp://localhost:8008/mapi_v2/articleApp/list
-·­Ò³×ÊÑ¶ÁĞ±í£ºhttp://localhost:8008/mapi_v2/articleApp/list?start=0&limit=20
-·­Ò³¹Ì¶¨Àà±ğµÄ×ÊÑ¶£ºhttp://localhost:8008/mapi_v2/articleApp/list?start=0&limit=20&categoryId=1
-×ÊÑ¶À¸Ä¿ÁĞ±í£ºhttp://localhost:8008/mapi_v2/articleApp/category
-×ÊÑ¶ÏêÇé£ºhttp://localhost:8008/mapi_v2/articleApp/detail/1
+èµ„è®¯è¿è¥è®¾ç½®ï¼šhttp://localhost:8008/mapi_v2/articleApp
+èµ„è®¯åˆ—è¡¨ï¼šhttp://localhost:8008/mapi_v2/articleApp/list
+ç¿»é¡µèµ„è®¯åˆ—è¡¨ï¼šhttp://localhost:8008/mapi_v2/articleApp/list?start=0&limit=20
+ç¿»é¡µå›ºå®šç±»åˆ«çš„èµ„è®¯ï¼šhttp://localhost:8008/mapi_v2/articleApp/list?start=0&limit=20&categoryId=1
+èµ„è®¯æ ç›®åˆ—è¡¨ï¼šhttp://localhost:8008/mapi_v2/articleApp/category
+èµ„è®¯è¯¦æƒ…ï¼šhttp://localhost:8008/mapi_v2/articleApp/detail/1
 
-Í¼Æ¬µØÖ·£º
-thumb£º http://localhost:8008/files/default/2017/08-28/223519787d81822534.jpg?5.5.6
+å›¾ç‰‡åœ°å€ï¼š
+thumbï¼š http://localhost:8008/files/default/2017/08-28/223519787d81822534.jpg?5.5.6
 	public://default/2017/08-28/223519787d81822534.jpg
 
-originalThumb£º  http://localhost:8008/files/article/2017/08-28/2235219d8ee6649398.jpg
+originalThumbï¼š  http://localhost:8008/files/article/2017/08-28/2235219d8ee6649398.jpg
 	  	 public://article/2017/08-28/2235219d8ee6649398.jpg
 
-picture£º	http://localhost:8008/files/default/2017/08-28/224540472f93138675.png?5.5.6
+pictureï¼š	http://localhost:8008/files/default/2017/08-28/224540472f93138675.png?5.5.6
 		/files/default/2017/08-28/224540472f93138675.png?5.5.6
 
 
