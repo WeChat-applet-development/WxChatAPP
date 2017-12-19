@@ -11,4 +11,7 @@
             </view>
         </view>
     </view>
+    <view class="news-details-content wxParse">
+        <text>视频简介：{{summary}}</text>
+    </view>
 </view>

@@ -8,7 +8,7 @@ Page({
   onLoad: function (options) {
     var that = this;
     wx.request({
-      url: CONFIG.API_URL.GET_PRODUCT_MEDIA + options.productid + '/lessons/' + options.id + '?token=r21godrkveskkcg0skwg80gco4o8w0o',
+      url: CONFIG.API_URL.GET_PRODUCT_MEDIA + options.productid + '/lessons/' + options.id + '?token=jna5j842vqgoo04o0wgowoc88w8kgsk',
       method: 'GET',
       data: {},
       header: {
@@ -22,6 +22,7 @@ Page({
           that.setData({
             mediaUri: data.mediaUri,
             title: data.title,
+            summary: data.summary,
           })
       }
     })

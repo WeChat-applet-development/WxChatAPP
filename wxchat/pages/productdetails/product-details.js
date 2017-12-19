@@ -4,8 +4,8 @@ var WxParse = require('../../utils/wxParse/wxParse.js');
 var app = getApp();
 Page({
   data:{
-    src1: "http://localhost:8008/mapi_v1/courses/1/lessons/1/media?token=r21godrkveskkcg0skwg80gco4o8w0o",
-    src: "http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+    src: "http://localhost:8008/mapi_v1/courses/1/lessons/1/media?token=jna5j842vqgoo04o0wgowoc88w8kgsk",
+    src1: "http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
   },
   onLoad: function (options) {
     var that = this;

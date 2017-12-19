@@ -4,20 +4,20 @@
     	<text class="page__title">{{news.title}}</text>
     	<text class="page__desc"></text>
   	</view>
-  	<view class="news-details-content swiper">
+  	<!--<view class="news-details-content swiper">
         <image mode="widthFix" src="{{news.largePicture}}" class="news-item-image" width="" height=""></image>
-    </view>
+    </view>-->
     <view class="page__bd">
         <view class="section section_gap">
             <view class="body-view" style="text-align: center;">
-                <video src="{{src1}}"></video>
+                <video src="{{src}}"></video>
             </view>
         </view>
     </view>
     <view class="news-details-content wxParse">
     	<template is="wxParse" data="{{wxParseData:about.nodes}}"/>
     </view>
-    <view class="news-details-content swiper wxParse">
+    <view class="news-details-content wxParse">
         <view><text>价格:{{news.price}}</text></view>
       	<view><text>特点：{{news.goals}}</text></view>
         <view><text>适用人群：{{news.audiences}}</text></view>
@@ -37,7 +37,7 @@
         <navigator url="/pages/productmedia/product-media?id={{item.id}}&productid={{news.id}}">
           <view class="news-item line">
               <view><text>标题：{{item.title}}</text></view>
-              <view><text>视频名称：{{item.mediaName}}</text></view>
+              <view><text>简介：{{item.summary}}</text></view>
           </view>
         </navigator>
       </block>
