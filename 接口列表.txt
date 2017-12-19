@@ -1,4 +1,4 @@
-登录：http://localhost:8008/mapi_v1/login?_username=admin&_password=admin
+﻿登录：http://localhost:8008/mapi_v1/login?_username=admin&_password=admin
 登出：http://localhost:8008/mapi_v1/logout?token=onx7e7sowe80kcgwwwwk04oc8kk08s4
 注册：http://localhost:8008/mapi_v1/user_register?email=huidaoli@qq.com&nickname=huidaoli&password=huidaoli
 
@@ -38,7 +38,8 @@ originalThumb：  http://localhost:8008/files/article/2017/08-28/2235219d8ee6649
 picture：	http://localhost:8008/files/default/2017/08-28/224540472f93138675.png?5.5.6
 		/files/default/2017/08-28/224540472f93138675.png?5.5.6
 
-
+师资列表： 	http://localhost:8008/mapi_v2/teacherApp
+翻页师资列表：	http://localhost:8008/mapi_v2/teacherApp?start=0&limit=20
 
 
 
